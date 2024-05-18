@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main-container{
+    display: flex;
+    height: 100vh;
+}
+.main-container .main-wrap{
+    height: 100vh;
+    width: 50%;
+}
+.main-container .main-right{
+    background:#0c285e;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .main-right div{
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.main-container .main-right div h2{
+    color:#ff0000;
+    font-size: 40px;
+}
+.main-container .main-right div:nth-of-type(2){
+    background: url('../imgs/banner.png') center center no-repeat;
+    background-size: cover;
+}
+.main-container .main-left{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.main-container .main-left div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-container .main-left .left-top,.main-container .main-left .left-bottom{
+    height: 50vh;
+    width: 100%;
+}
+.main-container .main-left .left-top h2,
+.main-container .main-left .left-top a{
+    text-decoration: underline;
+    color: #0d295e;
+}
+.main-container .main-left .left-bottom h2.tagLine{
+    color: #7030a0;
+    font-size: 36px;
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px){
+    .main-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .main-container .main-wrap{
+        height: auto;
+    width: 100%;
+    }
+    .main-container .main-left .left-top, .main-container .main-left .left-bottom{
+        height: auto;
+    }
+}
